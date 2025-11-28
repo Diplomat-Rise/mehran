@@ -38,13 +38,13 @@ function downloadVCard() {
   const vCardData = `
 BEGIN:VCARD
 VERSION:3.0
-FN:ADNAN ALBAKKOUR
-TITLE:Sales Manager
-ORG:RISE Properties
-TEL;TYPE=WORK,VOICE:+971586410997
-EMAIL:adnano@dpdxb.com
-URL:http://www.dpdxb.com
-ADR;TYPE=WORK:;;PO Box No 181702, Office NO.807, Opal Tower, Business Bay;Dubai;;UAE
+FN:MEHRAN SIDDIQUE
+TITLE:ACCOUNTANT
+ORG:Business Links
+TEL;TYPE=WORK,VOICE:+971586412055
+EMAIL:businesslink52@gmail.com
+URL:https://businessdxb.com/
+
 END:VCARD
   `.trim();
 
@@ -53,7 +53,7 @@ END:VCARD
 
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'ADNAN ALBAKKOUR.vcf';
+  a.download = 'MEHRAN SIDDIQUE.vcf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -64,3 +64,4 @@ document.querySelector('.save-contact-button').addEventListener('click', functio
   e.preventDefault();
   downloadVCard();
 });
+
